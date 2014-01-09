@@ -21,6 +21,8 @@ var Obstacle = Class.create(Sprite, {
 		}
 		// collision
 		if (this.intersect(Game.instance.gameScene.ship)) {
+			// sfx
+			Game.instance.assets['res/sounds/explosion.mp3'].play();
 			var resultScene = new ResultScene();
 			Game.instance.resultScene = resultScene;
 			Game.instance.replaceScene(resultScene);

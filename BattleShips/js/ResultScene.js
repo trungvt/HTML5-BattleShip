@@ -52,6 +52,10 @@ var ResultScene = Class.create(Scene, {
 	},
 
 	update: function(event) {
+		// bgm
+		if (Game.instance.bgm.currentTime >= Game.instance.bgm.duration) {
+			Game.instance.bgm.play();
+		}
 		this.continueLabelTimer += event.elapsed;
 		if (this.continueLabelTimer >= 400) {
 			this.continueLabelTimer = 0;

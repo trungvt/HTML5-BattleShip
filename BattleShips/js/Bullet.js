@@ -27,6 +27,8 @@ var Bullet = Class.create(Sprite, {
 				// score recorded
 				Game.instance.score += 1;
 				Game.instance.gameScene.scoreLabel.text = Game.instance.SCORE_TEXT + Game.instance.score;
+				// sfx
+				Game.instance.assets['res/sounds/bang.mp3'].play();
 			}
 		};
 		if (this.y <= -this.height) {

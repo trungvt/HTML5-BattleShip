@@ -14,6 +14,9 @@ window.onload = function() {
 	game.preload('res/images/rocket.png');
 	game.preload('res/images/meteor.gif')
 	game.preload('res/images/bullet.png');
+	game.preload('res/sounds/bgm.wav');
+	game.preload('res/sounds/bang.mp3');
+	game.preload('res/sounds/explosion.mp3');
 
 	game.fps = 30;
 	game.scale = 1;
@@ -21,6 +24,9 @@ window.onload = function() {
 		var topScene = new TopScene();
 		game.topScene = topScene;
 		game.pushScene(topScene);
+		// bgm
+		game.bgm = game.assets['res/sounds/bgm.wav'];
+		game.bgm.play();
 	}
 	game.start();
 };

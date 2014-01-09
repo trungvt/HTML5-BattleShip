@@ -47,6 +47,10 @@ var TopScene = Class.create(Scene, {
 		if (this.titleBar.x < Game.instance.width / 2 - this.titleBar.width / 2) {
 			this.titleBar.x += 10;
 		}
+		// bgm
+		if (Game.instance.bgm.currentTime >= Game.instance.bgm.duration) {
+			Game.instance.bgm.play();
+		}
 	},
 
 	touchToStart: function(event) {

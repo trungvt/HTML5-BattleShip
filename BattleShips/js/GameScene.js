@@ -51,6 +51,10 @@ var GameScene = Class.create(Scene, {
 	},
 
 	updateFrame: function(event) {
+		// bgm
+		if (Game.instance.bgm.currentTime >= Game.instance.bgm.duration) {
+			Game.instance.bgm.play();
+		}
 		this.obstaclesGenerateTimer += event.elapsed;
 		this.bulletsGenerateTimer += event.elapsed;
 		// attack
