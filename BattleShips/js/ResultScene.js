@@ -70,6 +70,7 @@ var ResultScene = Class.create(Scene, {
 	},
 
 	onTouch: function(event) {
+		Game.instance.assets['res/sounds/click.mp3'].play();
 		var topScene = new TopScene();
 		Game.instance.topScene = topScene;
 		Game.instance.replaceScene(topScene);

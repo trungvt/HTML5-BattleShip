@@ -54,6 +54,7 @@ var TopScene = Class.create(Scene, {
 	},
 
 	touchToStart: function(event) {
+		Game.instance.assets['res/sounds/click.mp3'].play();
 		var gameScene = new GameScene();
 		Game.instance.gameScene = gameScene;
 		Game.instance.replaceScene(gameScene);

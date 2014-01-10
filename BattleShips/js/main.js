@@ -17,6 +17,7 @@ window.onload = function() {
 	game.preload('res/sounds/bgm.wav');
 	game.preload('res/sounds/bang.mp3');
 	game.preload('res/sounds/explosion.mp3');
+	game.preload('res/sounds/click.mp3');
 
 	game.fps = 30;
 	game.scale = 1;
