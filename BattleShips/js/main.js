@@ -30,4 +30,6 @@ window.onload = function() {
 		game.bgm.play();
 	}
 	game.start();
+
+	window.scrollTo(0, 0);
 };
