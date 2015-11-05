@@ -1,4 +1,4 @@
 HTML5-BattleShip
 ================
 
-for HTML5 game sample
+Using Enchant.js Javascript game framework
